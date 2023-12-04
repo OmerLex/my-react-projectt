@@ -1,24 +1,40 @@
 import logo from './logo.svg';
+import img from "./img/prinsess_cupcakes.jpg";
+import Header from './components/Header';
+
 import './App.css';
 
+// function Header(){
+//   return (
+//     <h1>This message from Header Component.</h1>
+//   );
+// }
+
+// const Header = () => {
+//   return (
+//     <>
+//       <h1>This message from Header Component.</h1>
+//       <h2>This code will show error</h2>
+//     </>
+//   );
+// }
+
 function App() {
+  const name = "John";
+  const x = false;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <h1>Hello React!!!</h1>
+      <h2>Hello {name}</h2>
+      <h2> {x ? 'Yes': 'No'}</h2>
+      <img src={img} />
+      {/* Component */}
+      <Header />
+
+     
     </div>
+    
   );
 }
 
