@@ -31,6 +31,7 @@ function App() {
       <img src={img} />
       {/* Component */}
       <Header />
+      <h3>This line is for testing</h3>
 
      
     </div>
